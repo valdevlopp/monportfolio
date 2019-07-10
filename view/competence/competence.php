@@ -7,22 +7,20 @@
     <title><?php echo $competence->nom;?></title>
     <link rel="stylesheet" href="view/css/monstyle.css">
 </head>
-<body>
-    <!-- Affiche la liste de chaque compétence -->
-    <h1><?php echo $competence->nom;?></h1>
-
-    <div>
-        <span>Nom :</span>
-        <?php echo $competence->nom;?>
-    </div>
-    <div>
-        <span>Niveau :</span>
-        <?php echo $competence->niveau;?>
-    </div>
-    <div>
-        <span>Logo :</span>
-        <?php echo $competence->description;?>
-    </div>
-    
-</body>
+    <body>
+        <!-- Affiche la liste de chaque compétence -->
+        <h1><?php echo $competence->nom;?></h1>
+        <div>
+            <span>Nom :</span>
+            <?php echo $competence->nom;?>
+        </div>
+        <div>
+            <span>Niveau :</span>
+            <?php echo $competence->niveau;?>
+        </div>
+        <div>
+            <span>Logo :</span>
+            <?php echo $competence->description;?>
+        </div>
+    </body>
 </html>

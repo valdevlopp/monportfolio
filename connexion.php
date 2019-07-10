@@ -29,7 +29,7 @@ if( $_POST ){ //Si on a cliquer sur le bouton submit
 		$user = $r->fetch(PDO::FETCH_ASSOC);
 		debug($user);
 
-		//Vérification du mot de passe : si le mot de passe est correct, on renseigne des informations dans notre fichier de session
+		//Cryptage - Vérification du mot de passe : si le mot de passe est correct, on renseigne des informations dans notre fichier de session
 		if( password_verify( $_POST['password'], $user['password'] ) ){
 
 			$_SESSION['user']['id_user'] = $user['id_user'];
@@ -63,46 +63,48 @@ if( $_POST ){ //Si on a cliquer sur le bouton submit
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Formulaire de connexion</title>
+	<!-- CDN Bootstrap -->
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<!-- CDN -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- CSS -->
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/style-connexion.css">
-<!------ Include the above in your HEAD tag ---------->
   </head>
 
-<body id="LoginForm">
-<div class="container">
-<h1 class="form-heading">Connexion</h1>
-<div class="login-form">
-<div class="main-div">
-    <div class="panel">
-   <h2>Admin connexion</h2>
-   <p>Veuillez entrer votre pseudo et votre mot de passe</p>
-   </div>
+	<body id="LoginForm">
+		<div class="container">
+			<h1 class="form-heading">
+			</h1><br><br>
+				<div class="login-form">
+					<div class="main-div">
+						<div class="panel">
+							<h2>Connexion de l'administrateur
+							</h2>
+							<p>Veuillez entrer votre pseudo et votre mot de passe
+							</p>
+						</div>
 
-
-   <?= $content ?>
-    <form method="post">
-
-        <div class="form-group">
-            <input type="text" class="form-control" name="login" id="login" placeholder="Entrez votre pseudo">
-        </div>
-
-        <div class="form-group">
+	<?= $content ?>
+	<form method="post">
+		<div class="form-group">
+			<input type="text" class="form-control" name="login" id="login" placeholder="Entrez votre pseudo">
+		</div>
+		<div class="form-group">
 			<input type="password" class="form-control" name="password" id="password" placeholder="Entrez votre mot de passe">
 		</div>
-		
-        <div class="forgot">
-        <a href="reset.html">Vous avez oublié votre mot de passe</a>
+		<!-- 
+		<div class="forgot">
+		<a href="reset.html">Vous avez oublié votre mot de passe</a>
+		</div>
+		-->
+		<button type="submit" class="btn btn-primary">Connexion</button>
+	</form>
 </div>
-        <button type="submit" class="btn btn-primary">Connexion</button>
-
-    </form>
-    </div>
 <p class="botto-text"> Designed by Sunil Rajput</p>
-</div></div></div>
-
-
-</body>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
 

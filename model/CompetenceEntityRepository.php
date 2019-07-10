@@ -1,26 +1,38 @@
 <?php
-// L'entityRepository sert à l'orienté objet en architecture mvc
+/**
+ * * Le model gère les données du site, il fait le lien avec la bdd, il récupére les informations « brutes » dans la bdd,
+ * les organise et les assemble pour qu'elles puissent être traitées par le contrôleur.
+ * On y trouve entre autres les requêtes SQL. (on l'appelle entityRepository mais on peut l'appeler comme on veut)
+ */
+
+//Ici on definie le nom d'espace(namespace) : model
 namespace model;
 
+//ceci est mon fichier CompetenceEntityRepository :
 class CompetenceEntityRepository{
+    /**
+     * La visibilité privée permet d'indiquer que la propriété ou la méthode ne sera accessible
+     * qu'à l'intérieur de la classe.
+     * */
     private $db;
 
     private $table;
 
+    // Ici on crée un constructeur pour les classes
     public function __construct(){}
-/**
- * fonction pour la connexion a la bdd
- */
+    /**
+    * fonction pour la connexion a la bdd
+    */
     public function getDb(){
         /**
-        * Verifie que la db n'existe pas
+        * Verifie que la bdd n'existe pas
         */
         if( !$this->db ){
             /**
             * Essai de charger le fichier xml de configuration
             */
             try{
-                // simplexml_load_file permet d'intèrprété un fichier xml dans un objet
+                // simplexml_load_file permet d'intèrpréter un fichier xml dans un objet
                 $xml = simplexml_load_file('app/config/CompetenceConfig.xml');
                 // On stock la valeur de la colonne table(fichier xml) dans la variable privé table
                 $this->table = $xml->table;
@@ -42,11 +54,11 @@ class CompetenceEntityRepository{
     }
 
     //---------------------------------------------------------------------------------//
+  
     public function selectAll(){
         // On stock dans la variable $q l'execution de la requête
         $q = $this->getDb()->query('SELECT * FROM '.$this->table);
-        // On stock dans la variable $r le résultat du tableau $q
-        // Parce que la méthode fetchAll retourne un tableau
+        // On stock dans la variable $r le résultat du tableau $q, parce que la méthode fetchAll retourne un tableau
         $r = $q->fetchAll(\PDO::FETCH_OBJ);
         // Vérifie si vide
         if(!$r){

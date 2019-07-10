@@ -1,29 +1,40 @@
 <?php
-// Le controlleur gère l'envoi et la réception des infos entre la base de données
-//On defini le nom d'espace(namespace) controller
+/**
+ * * 
+ * Le controlleur reçoit la requête du visiteur qui demande la page, le controlleur demande les données au 
+ * modèle qui traduit cette demande en une requête SQL, qu'il transmet au controlleur qui lui même
+ * les transmets à la vue qui se chargera de retourner la vue "page html" demandée au visiteur.
+ * controlleur -> model -> controlleur -> vue
+ */
+
+//Ici on definie le nom d'espace(namespace) : controller
 namespace controller;
-//ceci est mon fichier competence controller
+
+//ceci est mon fichier competence controller :
 class CompetenceController {
-    // Variable global
+    /** 
+     * La visibilité public permet d'indiquer que la propriété ou la méthode sera accessible à l'intérieur mais aussi à l'extérieur de la classe.
+     * Variable global
+     */
     public $db;
-    // On créé un constructeur pour les classes
+    // Ici on crée un constructeur pour les classes
     public function __construct(){
-    // gestion des erreurs. Pas besoin d'écrire : controller\Error car le fichier se trouve déjà à l'intérieur
+    // La gestion des erreurs. Pas besoin d'écrire : controller\Error car le fichier se trouve déjà à l'intérieur
         $e = new Error; 
         $this->db = new \model\CompetenceEntityRepository;
     }
     //---------------------------------------------------------------------------------//
     public function redirect($location){
-        // Redirige vers la location
+        // Redirige vers la location - Renvoie un en-tête au client et un statut REDIRECT (302) au navigateur. 
         header('Location : '.$location);
     }
     //---------------------------------------------------------------------------------//
-    // recupère toutes les requetes ci-dessous
+    // Ici on recupère toutes les requetes ci-dessous :
     public function handleRequest(){
-        // Equivaut à $_GET'op'] si défini ou NULL si non défini
+        // Equivaut à $_GET['op'] si défini ou NULL si non défini
         $op = isset($_GET['op']) ? $_GET['op'] : NULL;
 
-        try{
+        try{ //essayer
             // si paramètre op
             if( !$op || $op == 'list'){
                 $this->listCompetence();
@@ -33,13 +44,14 @@ class CompetenceController {
                 $this->showError( "Page not found", 'Page for operation'. $op .'was not found.'); // sinon tu affiches page not found
             }
         }
-        // Gestion des erreurs avec PHP5 - "Ou bien tu affiches que l'application est une erreur
+        // Renvoi une erreur si l'essai l'affichage de la liste des compétences échoue
         catch(Exception $e){ 
 
             $this->showError("Application error", $e->getMessage() );
         }
     }
     //---------------------------------------------------------------------------------//
+    
     public function listCompetence(){
 
         $orderby = isset( $_GET['orderby'])?$_GET['orderby'] : NULL;

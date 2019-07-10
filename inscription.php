@@ -1,7 +1,5 @@
 <?php require_once('inc/adminHeader.inc.php');
 
-
-//---------------------------------------------------------------------
 if( $_POST ){ //Si on clique sur le bouton 'submit'
 
 	//debug( $_POST );
@@ -40,13 +38,11 @@ if( $_POST ){ //Si on clique sur le bouton 'submit'
 	//Affichage des erreurs:
 	$content .= $erreur;
 }
-
 //____________________________________________________________________
 ?>
 <h1>INSCRIPTION</h1>
 
 <?= $content ?>
-
 <form method="post">
 	<label for="login">login</label><br>
 	<input type="text" name="login" id="login" class="form-control"><br>
@@ -58,7 +54,6 @@ if( $_POST ){ //Si on clique sur le bouton 'submit'
 	<input type="text" name="nom" id="nom" class="form-control"><br>
 	<label for="email">Email</label><br>
 	<input type="text" name="email" id="email" class="form-control"><br>
-
 	<input type="submit" class="btn btn-secondary" value="S'inscrire">
 </form>
 

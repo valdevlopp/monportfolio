@@ -36,13 +36,13 @@
 
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web seo">
-                    <img src="public/images/img-portfolio/graphisme.png" alt="">
+                    <img src="public/images/img-portfolio/site_auto.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
                                 <!-- <a href="projets/ma_boutique/maboutique.html" target="_blank"> -->
-                                    <li class="lighbox"><a href="public/images/img-portfolio/graphisme.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li><a href="projets/e-com_vehicules/index.html" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 <!-- </a> -->
                                     </ul>
                                 </div>
@@ -54,12 +54,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item works seo">
 
-                    <img src="public/images/img-portfolio/resto.jpg" alt="">
+                    <img src="public/images/img-portfolio/ce_soir.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/resto.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/ce_soir.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,12 +71,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web">
 
-                    <img src="public/images/img-portfolio/boutique.jpg" alt="">
+                    <img src="public/images/img-portfolio/maboutique.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/boutique.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/maboutique.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,12 +87,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web works brands">
 
-                    <img src="public/images/img-portfolio/jurassic.png" alt="">
+                    <img src="public/images/img-portfolio/jurassic_world.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/jurassic.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li><a href="projets/jurassic_world" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -103,12 +103,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web brands">
 
-                   <img src="public/images/img-portfolio/licorne.png" alt="">
+                   <img src="public/images/img-portfolio/myunicorn.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/licorne.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/myunicorn.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -120,12 +120,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item works seo">
 
-                    <img src="public/images/img-portfolio/manga.png" alt="">
+                    <img src="public/images/img-portfolio/cv_valérie.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/manga.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/cv_valérie.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -136,12 +136,12 @@
 
                 <div class="item portfolio-item brands seo">
 
-                    <img src="public/images/img-portfolio/gite.png" alt="">
+                    <img src="public/images/img-portfolio/mangas.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/gite.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/mangas.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -153,12 +153,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web seo works">
 
-                    <img src="public/images/img-portfolio/portfolio2.jpg" alt="">
+                    <img src="public/images/img-portfolio/site_cv.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio8.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/site_cv.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>

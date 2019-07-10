@@ -1,5 +1,5 @@
 <?php
-
+// Permet de charger automatiquement les classes.
 class Autoload{
 
     public static $nb = 0; // permet de compter le nombre de fois où l'on passe dans l'autoload
