@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*mini reset*/
+
+/* ------ Importer des polices ------ */
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,700");
+
+/* ------ 1. Les balises ------ */
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-color: #f6f6f7;
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  width: 50%;
+  margin: 10% auto 5%; /*haut - droit & gauche - bas*/
+}
+section {
+  width: 100%;
+  display: inline-block;
+}
+footer {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 20%;
+  font-weight: bold;
+}
+/*---- Fin de l'architecture principale---*/
+/*----mise en forme des balises principales----*/
+
+nav {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: inherit; /*règle de l'héritage en CSS : l'enfant hérite des propriétés de son parent*/
+}
+footer p {
+  text-transform: uppercase; /*met le texte en majuscules*/
+}
+footer em {
+  font-size: 1.5vw;
+  font-style: italic;
+  line-height: 5rem;
+}
+
+/* ------ 2. Les ID ------ */
+#gout {
+  margin-bottom: 10%;
+}
+
+/* ------ 3. Les class ------ */
+.titre {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+header h2.titre,
+footer h5.titre {
+  color: #cf884d;
+  font-weight: bold;
+  font-size: 0.65rem;
+}
+footer h5.titre {
+  color: black;
+  font-size: 1rem;
+  padding: 3.5rem 0; /*haut et bas - droite et gauche*/
+  background-image: url("../img/plan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.plate {
+  margin: 0;
+  width: 49.94%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+#salle .plate:first-child,/*La pseudo-classe :last-child permet de cibler un élément qui est le premier enfant de son parent.*/
+#service .plate:last-child,
+#dressage .plate:first-child,/*La pseudo-classe :last-child permet de cibler un élément qui est le dernier enfant de son parent.*/
+#gout .plate:last-child {
+  padding: 3%;
+  width: 43.3%;
+}
+.plate img {
+  width: 100%;
+  height: auto;
+}
+/*Agencement du texte*/
+.plate h3 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  font-weight: bold;
+}
+.plate p {
+  font-style: italic;
+  font-size: 1.5vw;
+}
+.plate p:last-of-type {
+  margin-bottom: 5%;
+}
+.plate span {
+  color: #fff;
+  background-color: #383838;
+  text-transform: uppercase;
+  font-size: 2vw;
+  padding: 1% 7% 1% 2%;
+  margin-top: 2%;
+}
+/*FONTAWESOME*/
+.plate i {
+  font-size: 1.5vw;
+  margin: 0 0.5%;
+}
+/*fin FONTAWESOME*/
+
+/* ------ #plat ------ */
+#plat .plate {
+  width: 49%;
+  text-align: right;
+}
+#plat .plate:last-of-type {
+  position: relative;
+  right: 15%;
+}
+#plat .plate img {
+  border-radius: 50%;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+#plat .plate h3 {
+  font-style: italic;
+  text-transform: inherit;
+  font-size: 2vw;
+}
+#plat .plate p {
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 0.9vw;
+  letter-spacing: 0.1rem;
+}
+/*fin*/

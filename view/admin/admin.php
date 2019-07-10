@@ -4,81 +4,68 @@
 
       <div class="container-fluid">
 
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Parcours</a>
-          </li>
-          <li class="breadcrumb-item active">Aperçu</li>
-        </ol>
-
         <!-- Icon Cards-->
         <div class="row">
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-4 col-sm-5 mb-5">
             <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-comments"></i>
+                <i class="fas fa-tools"></i>
                 </div>
-                <div class="mr-5">26 New Messages!</div>
+                <div class="mr-5">COMPETENCES</div><br><br>
+                <div class="item-competence">
+                <img class="image-competence" src="../../public/images/team.jpg" alt="vue d'une équipe">
+                </div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+              <a class="card-footer text-white clearfix small z-1" href="TabCompetence.php">
+                <span class="float-left">Voir le Détail</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-4 col-sm-5 mb-5">
             <div class="card text-white bg-warning o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-list"></i>
+                <i class="fas fa-business-time"></i>
                 </div>
-                <div class="mr-5">11 New Tasks!</div>
+                <div class="mr-7">EXPERIENCE
+                <div class="item-experience">
+                <img class="image-experience" src="../../public/images/developer.jpg" alt="vue d'une équipe">
+                </div>
+                </div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+              <a class="card-footer text-white clearfix small z-1" href="TabExperience.php">
+                <span class="float-left">Voir le Détail</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-4 col-sm-5 mb-5">
             <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-shopping-cart"></i>
+                <i class="fas fa-user-graduate"></i>
                 </div>
-                <div class="mr-5">123 New Orders!</div>
+                <div class="mr-7">FORMATION
+                <div class="item-formation">
+                <img class="image-formation" src="../../public/images/diplome.jpg" alt="vue d'une équipe">
+                </div>
+                </div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+              <a class="card-footer text-white clearfix small z-1" href="TabFormation.php">
+                <span class="float-left">Voir le Détail</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-danger o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-life-ring"></i>
-                </div>
-                <div class="mr-5">13 New Tickets!</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
+        </div> <!-- FIN DE LA ROW -->
 
       </div> <!-- FIN CONTAINER -->
   

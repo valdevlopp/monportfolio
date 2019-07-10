@@ -6,19 +6,11 @@ $r = execute_requete("SELECT * FROM formation");?>
 
       <div class="container-fluid">
 
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Tableau de bord</a>
-          </li>
-          <li class="breadcrumb-item active">Parcours</li>
-        </ol>
-
         <!-- DataTables Example -->
         <div class="card mb-3">
-          <div class="card-header">
+          <div class="card-header" style="margin-left: 37%; margin-bottom: 16px;">
             <i class="fas fa-table"></i>
-            Tableau des formations</div>
+            TABLEAU DES FORMATIONS</div>
           <div class="card-body">
             <div class="table-responsive">
             <button type="button" class="btn btn-success" ><a href="?form=new" style="color:white;">Ajouter une formation</a></button><br>
@@ -41,11 +33,11 @@ $r = execute_requete("SELECT * FROM formation");?>
                     $colonne = $r->getColumnMeta($i);
                   ?>
 
-                    <th><?php echo $colonne['name'];?></th>
+                    <th style="text-align: center;"><?php echo $colonne['name'];?></th>
 
                   <?php } ?>
 
-                  <th colspan="2" style="text-align: center;">Action</th>
+                  <th colspan="2" style="text-align: center;">action</th>
                   </tr>
               </thead>
               
@@ -58,14 +50,14 @@ $r = execute_requete("SELECT * FROM formation");?>
                   <td>
                     <button type="button" class="btn btn-success">
                     <a href="?form=delete&id_formation=<?php echo $formations['id_formation']; ?>" style="color:white;">
-                        Delete
+                        Supprimer
                     </a>
                   </button>
                 </td>
                 <td>
                   <button type="button" class="btn btn-success">
                     <a href="?form=update&id_formation=<?php echo $formations['id_formation']; ?>" style="color:white;">
-                        Edite
+                        Modifier
                     </a>
                   </button>
                 </td>

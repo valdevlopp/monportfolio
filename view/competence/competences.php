@@ -5,15 +5,17 @@
                     <div class="row"> 
         <!-- Section Header -->
         <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-            <h2><span class="highlight-text">Compétences</span></h2>
+            <h2 class="entete"><span class="highlight-text">Compétences</span></h2>
             
-            <p class="col-md-8 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+            <p class="col-md-8 offset-md-2">Lors de ma formation j'ai acquis les notions des différents langages du web me permettant de réaliser des sites web dynamiques et des applications.</p>
         </div>
         <!-- Section Header End -->
 				
         <div class="menus-container"> 
                 <!-- menu --> 
                     <div class="menu row">
+                    <!-- boucle foreach me permet de récupérer mes données dans ma base de données 
+                        et de les afficher en alternance dans mon code html -->
                         <?php foreach ($competences as $competence) {
                             $id = $competence->id_competence;
 

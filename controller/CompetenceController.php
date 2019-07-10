@@ -1,41 +1,40 @@
 <?php
-
-namespace controller; // je rentre dans le dossier controller
-
-class CompetenceController{ //ceci est mon fichier competence controller
-    
+// Le controlleur gère l'envoi et la réception des infos entre la base de données
+//On defini le nom d'espace(namespace) controller
+namespace controller;
+//ceci est mon fichier competence controller
+class CompetenceController {
+    // Variable global
     public $db;
+    // On créé un constructeur pour les classes
     public function __construct(){
-
-        $e = new Error; // gestion des erreurs. Pas besoin d'écrire : controller\Error car le fichier se trouve déjà à l'intérieur
-
+    // gestion des erreurs. Pas besoin d'écrire : controller\Error car le fichier se trouve déjà à l'intérieur
+        $e = new Error; 
         $this->db = new \model\CompetenceEntityRepository;
     }
     //---------------------------------------------------------------------------------//
     public function redirect($location){
-
+        // Redirige vers la location
         header('Location : '.$location);
     }
     //---------------------------------------------------------------------------------//
-    public function handleRequest(){ // recupère toutes les requetes ci-dessous
-
-        $op = isset($_GET['op']) ? $_GET['op'] : Null; // si il exite $_get op alors il est null donc $op est égal à null
+    // recupère toutes les requetes ci-dessous
+    public function handleRequest(){
+        // Equivaut à $_GET'op'] si défini ou NULL si non défini
+        $op = isset($_GET['op']) ? $_GET['op'] : NULL;
 
         try{
-
-            if( !$op || $op == 'list'){ // recupere la liste de la bdd
+            // si paramètre op
+            if( !$op || $op == 'list'){
                 $this->listCompetence();
-            }
-            elseif( $op == 'show'){ // affiche les élements entrés
-
-                $this->showCompetence();
             }
             else{
 
                 $this->showError( "Page not found", 'Page for operation'. $op .'was not found.'); // sinon tu affiches page not found
             }
         }
-        catch(Exception $e){ // Gestion des erreurs avec PHP5 - "Ou bien tu affiches que l'application est une erreur
+        // Gestion des erreurs avec PHP5 - "Ou bien tu affiches que l'application est une erreur
+        catch(Exception $e){ 
 
             $this->showError("Application error", $e->getMessage() );
         }
@@ -47,18 +46,5 @@ class CompetenceController{ //ceci est mon fichier competence controller
         $competences = $this->db->selectAll($orderby);
 
         include 'view/competence/competences.php';
-    }
-    //---------------------------------------------------------------------------------//
-    public function showCompetence(){
-
-        $id = isset($_GET['id']) ? $_GET['id'] : NULL;
-        
-        if(!$id){
-
-            throw new Exception('Internal error.');
-        }
-        $competence = $this->db->select($id);
-
-		include 'view/competence/competence.php';
     }
 }

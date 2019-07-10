@@ -6,7 +6,9 @@
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
                 <h2><span class="highlight-text">Experiences</span></h2>
-                <p class="col-md-8 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+                <p class="col-md-8 offset-md-2">
+                    Un parcours athypique qui m'a permise d'aquérir de nombreuses compétences et d'enrichir mes savoirs afin de me réaliser pleinement en tant que développeuse.
+                    </p>
             </div>
             <!-- Section Header End -->
 

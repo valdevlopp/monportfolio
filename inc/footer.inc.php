@@ -6,9 +6,9 @@
 
                 <!-- Section Header -->
                 <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-                    <h2><span class="highlight-text">Gallery</span></h2>
+                    <h2><span class="highlight-text">Portfolio</span></h2>
                    
-                    <p class="col-md-8 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+                    <p class="col-md-8 offset-md-2">Réalisation de sites web dynamiques et d'intégrations</p>
                 </div>
                 <!-- Section Header End -->
 
@@ -22,11 +22,11 @@
             <div id="portfolio-filter" class="portfolio-filter-btn-group">
                 <ul>
                     <li>
-                        <a href="#" class="selected" data-filter="*">ALL</a> 
-						<a href="#" data-filter=".web">Nature</a> 
-						<a href="#" data-filter=".seo">Wildlife</a> 
-						<a href="#" data-filter=".works">Portfolio</a> 
-						<a href="#" data-filter=".brands">Portrait</a> 
+                        <a href="#" class="selected" data-filter="*">TOUT</a> 
+						<a href="#" data-filter=".web">E-commerce</a> 
+						<a href="#" data-filter=".seo">Intégration</a> 
+						<a href="#" data-filter=".works">Vitrine</a> 
+						<a href="#" data-filter=".brands">CV</a> 
                     </li>
                 </ul>
             </div>
@@ -36,30 +36,30 @@
 
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web seo">
-
-                    <img src="public/images/img-portfolio/portfolio1.jpg" alt="">
+                    <img src="public/images/img-portfolio/graphisme.png" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio1.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
-                                </ul>
-                            </div>
+                                <!-- <a href="projets/ma_boutique/maboutique.html" target="_blank"> -->
+                                    <li class="lighbox"><a href="public/images/img-portfolio/graphisme.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                <!-- </a> -->
+                                    </ul>
+                                </div>
                         </div>
                     </div>
-
-                </div>
+            </div>
                 <!-- Portfolio Items End -->
 
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item works seo">
 
-                    <img src="public/images/img-portfolio/portfolio2.jpg" alt="">
+                    <img src="public/images/img-portfolio/resto.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio2.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/resto.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,12 +71,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web">
 
-                    <img src="public/images/img-portfolio/portfolio3.jpg" alt="">
+                    <img src="public/images/img-portfolio/boutique.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio3.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/boutique.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -88,12 +88,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web works brands">
 
-                    <img src="public/images/img-portfolio/portfolio4.jpg" alt="">
+                    <img src="public/images/img-portfolio/jurassic.png" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio4.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/jurassic.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -104,12 +104,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item web brands">
 
-                   <img src="public/images/img-portfolio/portfolio5.jpg" alt="">
+                   <img src="public/images/img-portfolio/licorne.png" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio5.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/licorne.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -121,12 +121,12 @@
                 <!-- Portfolio Items -->
                 <div class="item portfolio-item works seo">
 
-                    <img src="public/images/img-portfolio/portfolio6.jpg" alt="">
+                    <img src="public/images/img-portfolio/manga.png" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio6.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/manga.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -137,12 +137,12 @@
 
                 <div class="item portfolio-item brands seo">
 
-                    <img src="public/images/img-portfolio/portfolio7.jpg" alt="">
+                    <img src="public/images/img-portfolio/gite.png" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/portfolio7.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/gite.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -201,6 +201,7 @@ if(isset($_POST['email']) and isset($_POST['nom']) and isset($_POST['message']))
 }
 else{
 ?>
+
 <section id="contact" class="section-wrapper contact-section col-md-8 offset-md-2" data-stellar-background-ratio="0.5">
     <div class="parallax-overlay"></div>
          
@@ -208,8 +209,8 @@ else{
         <div class="row">
             <!-- Section Header Contact-->
             <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-                <h2><span class="highlight-text">Me contacter</span></h2>
-                <p class="col-md-8 offset-md-2">We love feedback. Fill out the form below and we'll get back to you as soon as possible. in minus distinctio dolores ipsam.</p>
+                <h2 class="entete"><span class="highlight-text">Me contacter</span></h2>
+                <p class="col-md-8 offset-md-2">Laissez moi un message pour davantage de renseignements sur mon parcours.</p>
             </div> 
             <!-- Section Header Contact End -->
 
@@ -253,21 +254,16 @@ else{
         <div class="container">
             <div class="row footer-containertent">
                 <div class="col-md-4">
-                    <img src="images/logo.png" alt=""> <br/> <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro quos iste ratione doloribus asperiores, error omnis delectus rerum sapiente. Et, aliquam modi beatae quae in perferendis ab est fugiat!</p>
+                    <h4 class="citation-footer">Se réaliser professionnellement</h4>
+                    <p class="paraf-footer">La seule manière de faire du bon travail <br>c'est d'aimer ce que vous faites.</p>
                 </div>
                 <div class="col-md-4">
-                    <h4>News & Updates</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+                    <h4 class="citation-footer">La persévérance</h4>
+                    <p class="paraf-footer">La rigueur vient toujours à bout de l'obstacle.</p>
                 </div>
-                <div class="col-md-4 contac-us">
-                    <h4>Contact Us</h4>
-                    <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
-					<ul>
-                            <li><i class="fa fa-home"></i>123 New Venu Street</li>
-                            <li><i class="fa fa-phone"></i>001 123 12345 99</li>
-                            <li><i class="fa fa-envelope-o"></i>support@website.com</li>
-                        </ul> 
+                <div class="col-md-4">
+                    <h4 class="citation-footer">Aller au bout de ses rêves</h4>
+                    <p class="paraf-footer">Ne jamais renoncer, ne jamais faire semblant, ne jamais rester immobile, ne jamais s'accrocher au passé, ne jamais s'arrêter de rêver.</p>
                 </div>
             </div>
         </div>
@@ -277,31 +273,30 @@ else{
 
 <div class="container">
     <div class="row">
-        <div class="footer-containertent">
-
+        <div class="footer-containertent col-md-4 offset-md-4">
             <ul class="footer-social-info">
                 <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/vlemaitre-journaliste-web" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/valerielemaitrelemoult" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.viadeo.com/p/0028in2i47fpa7h" target="_blank"><i class="fa fa-viadeo"></i></a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
+                
             </ul>
-            <br/><br/>
-<p>Copyright © 2018. <a target="_blank" href="https://webthemez.com/tag/free" target="_blank">Free Website Template</a> by WebThemez.com. All rights reserved</p>
         </div>
+    </div>
+    <div class="col-md-6 offset-md-3">
+        <p>Copyright © 2018. <a target="_blank" href="https://webthemez.com/tag/free" target="_blank">Free Website Template</a> by WebThemez.com. All rights reserved</p>
     </div>
 </div>
 </footer>
 <!-- Footer End -->
-
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

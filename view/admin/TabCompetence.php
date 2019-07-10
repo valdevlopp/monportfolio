@@ -1,28 +1,20 @@
-<?php require_once('../../inc/init.inc.php'); ob_start();
+<?php require_once('../../inc/init.inc.php');
+ob_start();
 require_once('../../inc/adminHeader.inc.php');
-$r = execute_requete("SELECT * FROM competence");?>
+$r = execute_requete("SELECT * FROM competence");
+?>
 
-    <div id="content-wrapper">
-
-      <div class="container-fluid">
-
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Tableau de bord</a>
-          </li>
-          <li class="breadcrumb-item active">Parcours</li>
-        </ol>
-
-        <!-- DataTables Example -->
-        <div class="card mb-3">
-          <div class="card-header">
+<div id="content-wrapper">
+  <div class="container-fluid">
+      <!-- DataTables Example -->
+      <div class="card mb-3">
+        <div class="card-header" style="margin-left: 37%; margin-bottom: 16px;">
             <i class="fas fa-table"></i>
-           Tableau des compétences</div>
-          <div class="card-body">
-            <div class="table-responsive">
-            <button type="button" class="btn btn-success" ><a href="?op=new" style="color:white;">Ajouter une compétence</a></button><br>
-              
+          TABLEAU DES COMPETENCES</div>
+        <div class="card-body">
+          <div class="table-responsive">
+          <button type="button" class="btn btn-success" ><a href="?op=new" style="color:white;">Ajouter une compétence</a></button><br>
+              <!-- Tableau -->
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                   <tr>
@@ -41,31 +33,32 @@ $r = execute_requete("SELECT * FROM competence");?>
                     $colonne = $r->getColumnMeta($i);
                   ?>
 
-                    <th><?php echo $colonne['name'];?></th>
+                    <th style="text-align: center;"><?php echo $colonne['name'];?></th>
 
                   <?php } ?>
 
-                  <th colspan="2" style="text-align: center;">Action</th>
+                  <th colspan="2" style="text-align: center;">action</th>
                   </tr>
               </thead>
+              
               
               <tbody>
                 <?php while($competences = $r->fetch(PDO::FETCH_ASSOC)) { ?>
                   <tr>
                     <?php foreach($competences as $indice => $competence) : ?>
-                    <td><?php echo $competence; ?></td>
+                    <td style="text-align: center;"><?php echo $competence; ?></td>
                 <?php endforeach; ?>
-                  <td>
+                  <td style="text-align: center;">
                     <button type="button" class="btn btn-success">
                     <a href="?op=delete&id_competence=<?php echo $competences['id_competence']; ?>" style="color:white;">
-                        Delete
+                        Supprimer
                     </a>
                   </button>
                 </td>
-                <td>
+                <td style="text-align: center;">
                   <button type="button" class="btn btn-success">
                     <a href="?op=update&id_competence=<?php echo $competences['id_competence']; ?>" style="color:white;">
-                        Edite
+                        Modifier
                     </a>
                   </button>
                 </td>
@@ -73,7 +66,7 @@ $r = execute_requete("SELECT * FROM competence");?>
               </tr>
             <?php } 
 
-
+            // récupère les infos dans ma base de données
             if(!empty($_POST)){ // si le formulaire n'est pas vide et qu'il ya des infos dedans
               
               foreach ($_POST as $key => $value) {
@@ -97,7 +90,7 @@ $r = execute_requete("SELECT * FROM competence");?>
 
               }
             }
-            
+            // modifit mes données dans mon tableau et ma base de donnée.
             if(isset($_GET['op']) && $_GET['op'] == 'update'){
 
               $r = execute_requete("SELECT * FROM competence WHERE id_competence='$_GET[id_competence]'");

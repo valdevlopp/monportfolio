@@ -57,7 +57,7 @@ if( $_POST ){ //Si on a cliquer sur le bouton submit
 //__________________________________________________________________________
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,7 +72,7 @@ if( $_POST ){ //Si on a cliquer sur le bouton submit
 
 <body id="LoginForm">
 <div class="container">
-<h1 class="form-heading">login Form</h1>
+<h1 class="form-heading">Connexion</h1>
 <div class="login-form">
 <div class="main-div">
     <div class="panel">
