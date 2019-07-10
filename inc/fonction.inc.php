@@ -14,7 +14,6 @@ function debug( $arg ){
 		print '</pre>';
 	echo '</div>';
 }
-
 //--------------------------------------------------------------
 //fonction execute_requete() : permet d'effectuer une requête
 function execute_requete( $req ){
@@ -25,7 +24,6 @@ function execute_requete( $req ){
 
 	return $pdostatement;
 }
-
 //--------------------------------------------------------------
 //fonction userConnect() : si l'internaute est connecté
 function userConnect(){
@@ -39,7 +37,6 @@ function userConnect(){
 		return true;
 	}
 }
-
 //--------------------------------------------------------------
 //fonction adminConnect() : si l'internaute est connecté ET qu'il est admin
 function adminConnect(){
