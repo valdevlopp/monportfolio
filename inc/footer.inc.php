@@ -81,7 +81,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- Portfolio Items End -->
 
@@ -268,7 +267,6 @@ else{
             </div>
         </div>
     </section>
-
 <footer>
 
 <div class="container">
@@ -285,9 +283,8 @@ else{
                     <a href="https://www.viadeo.com/p/0028in2i47fpa7h" target="_blank"><i class="fa fa-viadeo"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/valdevlopp" target="_blank"><i class="fa fa-github"></i></a>
                 </li>
-                
             </ul>
         </div>
     </div>

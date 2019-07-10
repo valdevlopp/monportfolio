@@ -1,8 +1,6 @@
 <?php
-
+// L'entityRepository sert à l'orienté objet en architecture mvc
 namespace model;
-
-
 
 class CompetenceEntityRepository{
     private $db;
