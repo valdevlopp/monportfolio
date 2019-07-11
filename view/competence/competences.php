@@ -14,11 +14,12 @@
             <div class="menus-container"> 
                 <!-- menu --> 
                 <div class="menu row">
-                    <!-- boucle foreach me permet de récupérer mes données dans ma base de données 
-                        et de les afficher en alternance dans mon code html -->
+                    <!-- boucle foreach qui me permet de récupérer et d'afficher mes données dans ma base de données 
+                        et de les afficher en quinconce dans mon code côté front -->
                     <?php foreach ($competences as $competence) {
                         $id = $competence->id_competence;
-
+                        // affiche pour chacune des compétences si elle est paire ou impaire avec le modulo.
+                        // si $id divisé par 2 est égal à 0 il est pair et se place à gauche coté front
                         if (($id %2) == 0 ) {
                     ?>
                     <div class="col-md-6 wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
@@ -41,7 +42,9 @@
                             </div><!-- /food -->
                         </div><!-- /menu-column -->
                     </div><!-- /col-md-6 -->
-                    <?php } else { ?>
+                    <?php
+                // sinon il est impair et se place à droite côté front
+                 } else { ?>
                     
                     <div class="col-md-6 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
                         <div class="menu-column">

@@ -40,21 +40,27 @@ if( $_POST ){ //Si on clique sur le bouton 'submit'
 }
 //____________________________________________________________________
 ?>
-<h1>INSCRIPTION</h1>
+<h1 class="inscription-h1">Inscription</h1>
 
 <?= $content ?>
+
 <form method="post">
-	<label for="login">login</label><br>
-	<input type="text" name="login" id="login" class="form-control"><br>
-	<label for="password">Mot de Passe</label><br>
-	<input type="text" name="password" id="password" class="form-control"><br>
-	<label for="prenom">Prenom</label><br>
-	<input type="text" name="prenom" id="prenom" class="form-control"><br>
-	<label for="nom">Nom</label><br>
-	<input type="text" name="nom" id="nom" class="form-control"><br>
-	<label for="email">Email</label><br>
-	<input type="text" name="email" id="email" class="form-control"><br>
-	<input type="submit" class="btn btn-secondary" value="S'inscrire">
+	<label class="inscription" for="login">login</label><br>
+	<input class="inscription" type="text" name="login" id="login" class="form-control"><br>
+
+	<label class="inscription" for="password">Mot de Passe</label><br>
+	<input class="inscription" type="text" name="password" id="password" class="form-control"><br>
+
+	<label class="inscription" for="prenom">Prenom</label><br>
+	<input class="inscription" type="text" name="prenom" id="prenom" class="form-control"><br>
+
+	<label class="inscription" for="nom">Nom</label><br>
+	<input class="inscription" type="text" name="nom" id="nom" class="form-control"><br>
+
+	<label class="inscription" for="email">Email</label><br>
+	<input class="inscription" type="text" name="email" id="email" class="form-control"><br>
+	
+	<input class="inscription" type="submit" class="btn btn-secondary" value="S'inscrire">
 </form>
 
 <?php require_once('inc/adminFooter.inc.php'); ?>

@@ -11,7 +11,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=monportfolio', 'root', '', array(PDO
 
 //------------------------------------------------------------
 //Definition d'une constante
-define('URL', 'http://localhost/monportfolio_avectheme_6_2/');
+define('URL', 'http://localhost/monportfolio/');
 
 //------------------------------------------------------------
 //Déclaration d'une variable :

@@ -25,7 +25,9 @@ class CompetenceController {
     }
     //---------------------------------------------------------------------------------//
     public function redirect($location){
-        // Redirige vers la location - Renvoie un en-tête au client et un statut REDIRECT (302) au navigateur. 
+        /**
+         * En-tête "location" renvoie un en-tête au client et un statut REDIRECT (302) au navigateur, il redirige le navigateur 
+        */ 
         header('Location : '.$location);
     }
     //---------------------------------------------------------------------------------//

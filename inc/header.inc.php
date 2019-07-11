@@ -9,23 +9,23 @@
 	<meta name="Author" content="WebThemez"> 
     <title>LEMAITRE VALERIE</title>
     <!-- réinitialise à 0 toutes les valeurs de nombreux attributs css pour tous les navigateurs -->
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/normalize.css">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="<?php echo URL; ?>public/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS -->
-	<link rel="stylesheet" href="<?php echo URL; ?>public/elegant_font/style.css" />
+	<link rel="stylesheet" href="public/elegant_font/style.css" />
     <!--[if lte IE 7]><script src="elegant_font/lte-ie7.js"></script><![endif]-->
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/slider-pro.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/owl.theme.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/owl.transitions.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/animate.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/monstyle.css">
+    <link rel="stylesheet" href="public/css/magnific-popup.css">
+    <link rel="stylesheet" href="public/css/slider-pro.css">
+    <link rel="stylesheet" href="public/css/owl.carousel.css">
+    <link rel="stylesheet" href="public/css/owl.theme.css">
+    <link rel="stylesheet" href="public/css/owl.transitions.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/monstyle.css">
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
@@ -79,7 +79,7 @@
             </div>
         </nav>
     </header>
-    <!-- Header End -->
+    <!-- Fin Header -->
 
 <section class="slider-pro slider" id="slider">
     <div class="sp-slides">
@@ -87,22 +87,21 @@
                 <div class="sp-slide main-slides">
                         <div class="img-overlay">
                         </div>
-                            <img class="sp-image" src="public/images/slider/main.jpg" alt="Slider 1" style="opacity:0.5;"/>
+                        <img class="sp-image" src="public/images/slider/main.jpg" alt="Slider 1" style="opacity:0.5;"/>
                         <div class="container-titre">
-                        <div class="row-titre">
-                        <div class="col-md-12 col-sm-5 col-xs-5 section-header wow">
-                            <h2 class="nom-titre">
-                            <span class="highlight-text">Valérie Lemaitre<br />Développeuse web
-                            </span>
-                            </h2>
-                        </div>
-                    </div>
-                </div> <!-- fin sp-slides -->  
-            </section> <!--fin de section 1 -->
-        </div> <!-- main-slide end -->
-    </div> <!-- sp-slides end -->
+                            <div class="row-titre">
+                                <div class="col-md-12 col-sm-5 col-xs-5 section-header wow">
+                                    <h2 class="nom-titre">
+                                        <span class="highlight-text">Valérie Lemaitre<br />Développeuse web
+                                        </span>
+                                    </h2>
+                                </div> <!-- fin col-md-12 -->
+                            </div> <!-- fin row -->
+                        </div> <!-- fin container -->
+        </div> <!-- fin main-slides -->
+    </div> <!-- fin sp-slides -->
 </section>
-    <!-- SLIDER END -->
+    <!-- FIN SLIDER -->
 
     <!-- ABOUT --> 
     <section id="about" class="about-sec section-wrapper description">

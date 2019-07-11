@@ -35,9 +35,7 @@
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                <!-- <a href="projets/ma_boutique/maboutique.html" target="_blank"> -->
-                                    <li><a href="projets/e-com_vehicules/index.html" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
-                                <!-- </a> -->
+                                <li class="lighbox"><a href="public/images/img-portfolio/graphisme.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                     </ul>
                                 </div>
                         </div>
@@ -52,7 +50,7 @@
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/ce_soir.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/resto_cesoir.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -67,7 +65,7 @@
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/maboutique.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/boutique.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -76,13 +74,13 @@
                 <!-- Portfolio Items End -->
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item web works brands">
+                <div class="item portfolio-item seo works">
                     <img src="public/images/img-portfolio/jurassic_world.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li><a href="projets/jurassic_world" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                <li class="lighbox"><a href="public/images/img-portfolio/jurassic.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -91,13 +89,13 @@
                 <!-- Portfolio Items -->
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item web brands">
+                <div class="item portfolio-item seo works">
                    <img src="public/images/img-portfolio/myunicorn.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/myunicorn.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/licorne.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -106,14 +104,14 @@
                 <!-- Portfolio Items End -->
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item works seo">
+                <div class="item portfolio-item brands seo">
 
-                    <img src="public/images/img-portfolio/cv_valérie.jpg" alt="">
+                    <img src="public/images/img-portfolio/cv_valerie.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/cv_valérie.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/cv_valerie.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -121,13 +119,13 @@
                 </div>
                 <!-- Portfolio Items End -->
 
-                <div class="item portfolio-item brands seo">
+                <div class="item portfolio-item works seo">
                     <img src="public/images/img-portfolio/mangas.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/mangas.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/manga.png" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -136,13 +134,13 @@
                 <!-- Portfolio Items End -->
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item web seo works">
+                <div class="item portfolio-item brands seo">
                     <img src="public/images/img-portfolio/site_cv.jpg" alt="">
                     <div class="portfolio-details-wrapper">
                         <div class="portfolio-details">
                             <div class="portfolio-meta-btn">
                                 <ul class="work-meta">
-                                    <li class="lighbox"><a href="public/images/img-portfolio/site_cv.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
+                                    <li class="lighbox"><a href="public/images/img-portfolio/sitecv.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -159,27 +157,39 @@
 <!-- CONTACT -->
 
 <?php
-if(isset($_POST['email']) and isset($_POST['nom']) and isset($_POST['message'])){
-   $destinataire = 'vlemaitreweb@gmail.com';
-   $email = htmlentities($_POST['email']);
-   if(preg_match('#^(([a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+\.?)*[a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+)@(([a-z0-9-_]+\.?)*[a-z0-9-_]+)\.[a-z]{2,}$#i',str_replace('&amp;','&',$email))){
-       $nom = 'Contact: '.stripslashes($_POST['nom']);
-       $message = stripslashes($_POST['message']);
-       $headers = "From: <".$email.">\n";
-       $headers .= "Reply-To: ".$email."\n";
-       $headers .= "Content-Type: text/plain; charset=\"iso-8859-1\"";
-       if(mail($destinataire,$nom,$message,$headers)){
-           echo "<strong>Votre message a bien &eacute;t&eacute; envoy&eacute;.</strong>";
-       }
-       else{
-           echo "<strong style=\"color:#ff0000
-;\">Une erreur c'est produite lors de l'envois du message.</strong>";
-       }
-   }
-   else{
-       echo "<strong style=\"color:#ff0000
-;\">L'email que vous avez entr&eacute; est invalide.</strong>";
-   }
+
+if(isset($_POST['email']) and isset($_POST['sujet']) and isset($_POST['message'])){
+
+    $destinataire = 'mehdi.hamdaoui01@gmail.com';
+
+    $email = htmlentities($_POST['email']);
+
+    if(preg_match('#^(([a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+\.?)*[a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+)@(([a-z0-9-_]+\.?)*[a-z0-9-_]+)\.[a-z]{2,}$#i',str_replace('&amp;','&',$email))){
+
+        $sujet = 'Contact: '.stripslashes($_POST['sujet']);
+
+        $message = stripslashes($_POST['message']);
+
+        $headers = "From: <".$email.">\n";
+
+        $headers .= "Reply-To: ".$email."\n";
+
+        $headers .= "Content-Type: text/plain; charset=\"iso-8859-1\"";
+
+        if(mail($destinataire,$sujet,$message,$headers)){
+
+            echo "<strong>Votre message a bien &eacute;t&eacute; envoy&eacute;.</strong>";
+        }
+        else{
+
+            echo "<strong style=\"color:#ff0000;\">Une erreur c'est produite lors de l'envois du message.</strong>";
+
+        }
+    }
+    else{
+
+        echo "<strong style=\"color:#ff0000;\">L'email que vous avez entr&eacute; est invalide.</strong>";
+    }
 }
 else{
 ?>
@@ -224,7 +234,9 @@ else{
         </div> <!-- Fin div row -->
     </div> <!-- fin div container -->
 </section> <!-- fin de section -->
-<?php } ?>
+<?php
+ } 
+ ?>
 <!-- Contact Section End -->
 
 <!--FOOTER -->
@@ -279,7 +291,7 @@ else{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="public/js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
 <script src="public/js/modernizr.min.js"></script>
 <script src="public/js/jquery.easing.1.3.js"></script>
 <script src="public/js/jquery.scrollUp.min.js"></script>

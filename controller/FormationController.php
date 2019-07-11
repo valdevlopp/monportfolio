@@ -1,9 +1,12 @@
 <?php
 // On defini le nom d'espace(namespace) controller
 namespace controller;
+
 //ceci est mon fichier formation controller
 namespace controller; 
-class FormationController{ //ceci est mon fichier Experience controller
+
+//ceci est mon fichier formationController
+class FormationController{ 
       // Variable global
     public $db;
     // On créé un constructeur pour les classes

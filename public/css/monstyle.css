@@ -63,6 +63,14 @@ color: rgb(248, 142, 85)!important;
 .paraf-footer{
     text-align: center;
 }
+
+.inscription-h1{
+    margin-left: 10px;
+}
+
+.inscription{
+    margin-left: 12rem;
+}
 /* TIMELINE STYLE */
 
 a{text-decoration:none}

@@ -58,5 +58,5 @@
 <script src="../../public/js/demo/datatables-demo.js"></script>
 <script src="../../public/js/demo/chart-area-demo.js"></script>
 
-</body>
+    </body>
 </html>
