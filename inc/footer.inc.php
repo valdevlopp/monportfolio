@@ -186,7 +186,7 @@
                         <div class="row">
                             <div class="col-md-12">
                             <!-- en attendant de trouver le code php pour recevoir des messages directement via le formulaire de contact. -->
-                            <a href="mailto:vlemaitreweb@gmail.com">Veuillez m'envoyer votre message </a>
+                            <a class="contact-color" href="mailto:vlemaitreweb@gmail.com">Veuillez m'envoyer votre message </a>
                             <textarea rows="10" cols="100" class="form-control" placeholder="Message" name="message" id="message" required data-validation-required-message="" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none">
                             </textarea>
                             </div> 	

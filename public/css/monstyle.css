@@ -63,7 +63,9 @@ color: rgb(248, 142, 85)!important;
 .paraf-footer{
     text-align: center;
 }
-
+.contact-color{
+    color: rgb(248, 142, 85) !important;
+}
 .inscription-h1{
     margin-left: 10px;
 }
