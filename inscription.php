@@ -40,7 +40,7 @@ if( $_POST ){ //Si on clique sur le bouton 'submit'
 }
 //____________________________________________________________________
 ?>
-<h1 class="inscription-h1">Inscription</h1>
+<h3 class="inscription-h1">Inscription</h3>
 
 <?= $content ?>
 
@@ -51,7 +51,7 @@ if( $_POST ){ //Si on clique sur le bouton 'submit'
 	<label class="inscription" for="password">Mot de Passe</label><br>
 	<input class="inscription" type="text" name="password" id="password" class="form-control"><br>
 
-	<label class="inscription" for="prenom">Prenom</label><br>
+	<label class="inscription" for="prenom">Prénom</label><br>
 	<input class="inscription" type="text" name="prenom" id="prenom" class="form-control"><br>
 
 	<label class="inscription" for="nom">Nom</label><br>

@@ -156,44 +156,6 @@
 
 <!-- CONTACT -->
 
-<?php
-
-if(isset($_POST['email']) and isset($_POST['sujet']) and isset($_POST['message'])){
-
-    $destinataire = 'mehdi.hamdaoui01@gmail.com';
-
-    $email = htmlentities($_POST['email']);
-
-    if(preg_match('#^(([a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+\.?)*[a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+)@(([a-z0-9-_]+\.?)*[a-z0-9-_]+)\.[a-z]{2,}$#i',str_replace('&amp;','&',$email))){
-
-        $sujet = 'Contact: '.stripslashes($_POST['sujet']);
-
-        $message = stripslashes($_POST['message']);
-
-        $headers = "From: <".$email.">\n";
-
-        $headers .= "Reply-To: ".$email."\n";
-
-        $headers .= "Content-Type: text/plain; charset=\"iso-8859-1\"";
-
-        if(mail($destinataire,$sujet,$message,$headers)){
-
-            echo "<strong>Votre message a bien &eacute;t&eacute; envoy&eacute;.</strong>";
-        }
-        else{
-
-            echo "<strong style=\"color:#ff0000;\">Une erreur c'est produite lors de l'envois du message.</strong>";
-
-        }
-    }
-    else{
-
-        echo "<strong style=\"color:#ff0000;\">L'email que vous avez entr&eacute; est invalide.</strong>";
-    }
-}
-else{
-?>
-
 <section id="contact" class="section-wrapper contact-section col-md-8 offset-md-2" data-stellar-background-ratio="0.5">
     <div class="parallax-overlay">
     </div> 
@@ -213,16 +175,20 @@ else{
                     <form name="sentMessage" id="contactForm"  novalidate>  
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Nom" name="nom" id="name" required data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control" placeholder="Nom" name="sujet" id="sujet" required data-validation-required-message="Veuillez entrer votre nom" />
                                 <p class="help-block"></p>
                             </div> 	
                             <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Email" name="email" id="email" required data-validation-required-message="Please enter your email" />
+                                <input type="email" class="form-control" placeholder="Email" name="email" id="email" required data-validation-required-message="Veuillez entrer votre email" /> 
+                                
                             </div> 	
                         </div> <!-- fin div row -->
                         <div class="row">
                             <div class="col-md-12">
-                                <textarea rows="10" cols="100" class="form-control" placeholder="Message" name="message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+                            <!-- en attendant de trouver le code php pour recevoir des messages directement via le formulaire de contact. -->
+                            <a href="mailto:vlemaitreweb@gmail.com">Veuillez m'envoyer votre message </a>
+                            <textarea rows="10" cols="100" class="form-control" placeholder="Message" name="message" id="message" required data-validation-required-message="" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none">
+                            </textarea>
                             </div> 	
                         </div>
                         <div class="col-md-8 offset-md-2"><br><div id="success">
@@ -234,9 +200,7 @@ else{
         </div> <!-- Fin div row -->
     </div> <!-- fin div container -->
 </section> <!-- fin de section -->
-<?php
- } 
- ?>
+
 <!-- Contact Section End -->
 
 <!--FOOTER -->

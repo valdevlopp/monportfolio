@@ -29,12 +29,12 @@ if( $_POST ){ //Si on a cliquer sur le bouton submit
 		$user = $r->fetch(PDO::FETCH_ASSOC);
 		debug($user);
 
-		//Cryptage - Vérification du mot de passe : si le mot de passe est correct, on renseigne des informations dans notre fichier de session
+		//Vérification du mot de passe : si le mot de passe est correct, on renseigne des informations dans notre fichier de session
 		if( password_verify( $_POST['password'], $user['password'] ) ){
 
 			$_SESSION['user']['id_user'] = $user['id_user'];
 			$_SESSION['user']['login'] = $user['login'];
-            $_SESSION['user']['password'] = $user['password'];
+      $_SESSION['user']['password'] = $user['password'];
 			$_SESSION['user']['prenom'] = $user['prenom'];
 			$_SESSION['user']['nom'] = $user['nom'];
 			$_SESSION['user']['email'] = $user['email'];

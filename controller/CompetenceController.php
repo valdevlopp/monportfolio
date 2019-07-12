@@ -31,7 +31,7 @@ class CompetenceController {
         header('Location : '.$location);
     }
     //---------------------------------------------------------------------------------//
-    // Ici on recupère toutes les requetes ci-dessous :
+    // Ici on recupère toutes les requetes  :
     public function handleRequest(){
         // Equivaut à $_GET['op'] si défini ou NULL si non défini
         $op = isset($_GET['op']) ? $_GET['op'] : NULL;
