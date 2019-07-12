@@ -32,6 +32,11 @@ class CompetenceController {
     }
     //---------------------------------------------------------------------------------//
     // Ici on recupère toutes les requetes  :
+    /**
+     * entity récupère la bdd - le controller récupère le fichier entity qui va me permettre l'affichage  sur mon index.php. grâce
+     *  à la fonction handlerequest 
+     *  */
+
     public function handleRequest(){
         // Equivaut à $_GET['op'] si défini ou NULL si non défini
         $op = isset($_GET['op']) ? $_GET['op'] : NULL;

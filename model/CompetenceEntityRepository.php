@@ -3,6 +3,8 @@
  * * Le model gère les données du site, il fait le lien avec la bdd, il récupére les informations « brutes » dans la bdd,
  * les organise et les assemble pour qu'elles puissent être traitées par le contrôleur.
  * On y trouve entre autres les requêtes SQL. (on l'appelle entityRepository mais on peut l'appeler comme on veut)
+ * 
+ * Récupère les données de la bdd et les transmet au controller qui les transmet à la vue.
  */
 
 //Ici on definie le nom d'espace(namespace) : model

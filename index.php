@@ -10,4 +10,6 @@
  $controller = new controller\FormationController();
  $controller->handleRequest();
 
+ //permet de mettre en lien les fichiers controller pour permettre l'affichage 
+
  
